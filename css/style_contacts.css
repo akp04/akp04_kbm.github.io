@@ -1,0 +1,140 @@
+body{
+	margin: 0 auto; /*imp*/
+	font-family: 'Heebo', sans-serif;
+	/*background-image: url(pic_1.jpg);
+	background-size: cover;
+	position: fixed;*/
+}
+
+
+/***************NAVBAR*************/
+.container{
+	margin: 0px;
+	font-size: 1em;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+	grid-gap:10px ;
+	align-items: center;
+	text-align: center;
+	padding: 10px 10px 10px 0px;
+	opacity: 0.9;
+	
+
+}
+.container:hover{
+	transform: scale(1.02,1.02);
+	border-bottom:  0.6px solid rgba(0,0,0,0.8);
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	border-bottom:  0.5px solid rgba(0,0,0,0.4);
+
+
+}
+li{
+	list-style: none;
+}
+
+.push{
+	margin-right: auto;
+}
+a{
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+}
+a:hover{
+	background-color: white;
+	color: red;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        font-size: 0.70em;
+        grid-gap: 0px;
+        /*width: 100%;*/
+    }
+    li {
+    padding: 0px;
+	}
+	.logo-img{
+		width: 280px;
+		padding: 0px;
+	}
+	a{
+		letter-spacing: 0.5px;
+	}
+	
+}
+
+/***********************COVER****************************/
+
+.content_1{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 90px;
+	margin: 150px 300px 100px 300px;
+	font-size: 0.8em;
+	line-height: 25px;
+	/*background-color: white;*/
+
+}
+.content_1_inside{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid rgb(200,200,200);
+	text-align: center;
+	align-items:  center;
+	background-color: white;
+	padding: 0px 0px 0px 0px;
+}
+.content_1_inside:hover{
+	transform: scale(1.1,1.1);	
+}
+
+.content_1_inside > img{
+padding: 0px 0px 20px 0px;
+}
+.content_inside_text{
+	padding: 10px 60px 40px 60px;
+	letter-spacing: 1px;
+}
+hr{
+	border: 0.2px solid grey;
+	width: 50%;
+}
+@media only screen and (max-width: 900px) {
+	.content_1{
+		grid-template-columns: 1fr;
+		margin:  107px 100px 2em 100px;
+		font-size: 0.8rem;
+	}
+	.content_inside{
+		
+	}
+	.content_inside_text{
+	padding: 10px 20px 40px 20px;
+}
+}
+
+
+
+/*
+**************FOOTER******************************/
+
+footer{
+	text-align: center;
+	background-color: #2B2D6E /*rgba(190,190,190,0.3)*/;
+	padding: 100px 60px;
+	color: white;
+	opacity: 1;
+	letter-spacing: 2px;
+}
+
